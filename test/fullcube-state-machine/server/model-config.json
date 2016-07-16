@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins",
+      "../../../lib/mixins"
+    ]
+  },
+  "Subscription": {
+    "dataSource": "db",
+    "public": true,
+    "strict": true
+  },
+  "Product": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Template": {
+    "dataSource": "db",
+    "public": true
+  }
+}
