@@ -1,2 +1,3 @@
 /coverage/
-test/fullcube-state-machine/server
+node_modules/
+test/

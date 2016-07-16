@@ -5,22 +5,19 @@ module.exports = function(app, cb) {
   const recipe = {
     Product: [
       {
-        template: 'full',
+        template: 'Product',
         amount: 0,
       }, {
-        template: 'basic',
+        template: 'ProductBasic',
         amount: 0,
       }, {
-        template: 'shirt',
+        template: 'ProductShirt',
         amount: 20,
       },
     ],
-    Subscription: [
+    Person: [
       {
-        template: 'basic',
-        amount: 10,
-      }, {
-        template: 'full',
+        template: 'Person',
         amount: 10,
       },
     ],
@@ -34,7 +31,7 @@ module.exports = function(app, cb) {
 
     recipe[modelName].forEach(dummyModel => {
       for (let i = 0; i < dummyModel.amount; i++) {
-        const dummy = app.models[modelName]._templates()[dummyModel.template]
+        const dummy = app.models.Template._templates()[dummyModel.template]
 
         promises.push(Model.create(dummy))
       }
@@ -46,20 +43,4 @@ module.exports = function(app, cb) {
     .then(res => console.log('%s dummy models created', res.length))
     .then(cb)
     .catch(cb)
-  // console.log(dummyData)
-
-  //
-  // console.log(`Dummy Models: Models with _templates found: %o`, recipe)
-  //
-  // recipe.forEach(dummyModel => {
-  //   for(var i = 0; i < 100; i++) {
-  //     console.log('dummyModel 1', app.models[dummyModel]._templates)
-  //
-  //   }
-  //
-  // })
-  //
-  // return process.nextTick(cb)
-  //
-
-};
+}

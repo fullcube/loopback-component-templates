@@ -14,16 +14,19 @@
       "../../../lib/mixins"
     ]
   },
-  "Subscription": {
+  "Template": {
     "dataSource": "db",
-    "public": true,
-    "strict": true
+    "public": true
+  },
+  "Person": {
+    "dataSource": "db",
+    "public": true
   },
   "Product": {
     "dataSource": "db",
     "public": true
   },
-  "Template": {
+  "Subscription": {
     "dataSource": "db",
     "public": true
   }
