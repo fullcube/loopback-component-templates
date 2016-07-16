@@ -36,3 +36,8 @@ In this example we add a remote method called `_template_basic` to the Product m
     }),
   })
   ```
+
+### TODO:
+
+- Add way to create related/deep structures
+- Add option to Validate template generators
