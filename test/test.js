@@ -44,8 +44,27 @@ describe('Create dummy data from templates', function() {
     this.templateNames.forEach(templateName => {
       const methodName = `_template_${templateName}`
 
-      it(`should had a method for template ${templateName}`, function() {
-        expect(Template).to.itself.respondTo(methodName)
+      describe(`Template ${templateName}`, function() {
+        it(`should have a method for template ${templateName}`, function() {
+          expect(Template).to.itself.respondTo(methodName)
+        })
+
+        it(`should respond to the method for template ${templateName}`, function() {
+          return Template[methodName]
+            .call()
+            .then(result => {
+              expect(result).to.be.an('object')
+            })
+        })
+
+        it(`should override options in the template ${templateName}`, function() {
+          return Template[methodName]
+            .call(this, { programId: '123' })
+            .then(result => {
+              expect(result.programId).to.equal('123')
+            })
+        })
+
       })
     })
   })
