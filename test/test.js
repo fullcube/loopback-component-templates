@@ -25,23 +25,21 @@ describe('Component', function() {
 describe('Create dummy data from templates', function() {
   before(function() {
     this.templates = Template._templates()
-    console.log(this.templates)
-
   })
 
   it('should have templates defined', function() {
     expect(this.templates).to.be.an('object')
-    expect(this.templates.personBasic).to.be.an('object')
-    expect(this.templates.personCard).to.be.an('object')
-    expect(this.templates.personFull).to.be.an('object')
-    expect(this.templates.productBasic).to.be.an('object')
-    expect(this.templates.productFull).to.be.an('object')
-    expect(this.templates.productShirt).to.be.an('object')
-    expect(this.templates.workflowBasic).to.be.an('object')
+    expect(this.templates.Application).to.be.an('object')
+    expect(this.templates.Card).to.be.an('object')
+    expect(this.templates.Person).to.be.an('object')
+    expect(this.templates.Product).to.be.an('object')
+    expect(this.templates.ProductBasic).to.be.an('object')
+    expect(this.templates.ProductShirt).to.be.an('object')
+    expect(this.templates.Program).to.be.an('object')
+    expect(this.templates.User).to.be.an('object')
   })
 
-  describe('should have methods defined', function() {
-    console.log(this.templates)
+  it('should have methods defined', function() {
     this.templateNames = Object.keys(this.templates)
     this.templateNames.forEach(templateName => {
       const methodName = `_template_${templateName}`
