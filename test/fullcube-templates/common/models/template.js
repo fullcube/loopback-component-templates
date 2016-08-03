@@ -6,6 +6,7 @@ module.exports = function(Template) {
     Application: FcTemplates.Application(),
     Card: FcTemplates.Card(),
     Person: FcTemplates.Person(),
+    PersonComplex: FcTemplates.PersonComplex(),
     Product: FcTemplates.Product(),
     ProductBasic: FcTemplates.ProductBasic(),
     ProductShirt: FcTemplates.ProductShirt(),
