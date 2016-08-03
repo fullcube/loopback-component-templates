@@ -50,19 +50,15 @@ describe('Create dummy data from templates', function() {
         })
 
         it(`should respond to the method for template ${templateName}`, function() {
-          return Template[methodName]
-            .call()
-            .then(result => {
-              expect(result).to.be.an('object')
-            })
+          const result = Template[methodName].call()
+
+          expect(result).to.be.an('object')
         })
 
         it(`should override options in the template ${templateName}`, function() {
-          return Template[methodName]
-            .call(this, { programId: '123' })
-            .then(result => {
-              expect(result.programId).to.equal('123')
-            })
+          const result = Template[methodName].call(this, { programId: '123' })
+
+          expect(result.programId).to.equal('123')
         })
 
       })
