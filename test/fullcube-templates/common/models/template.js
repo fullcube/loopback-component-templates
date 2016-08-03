@@ -11,6 +11,7 @@ module.exports = function(Template) {
     ProductShirt: FcTemplates.ProductShirt(),
     Program: FcTemplates.Program(),
     User: FcTemplates.User(),
+    Workflow: FcTemplates.WorkflowBasic(),
   })
 
 }

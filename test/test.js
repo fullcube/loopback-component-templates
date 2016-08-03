@@ -37,6 +37,7 @@ describe('Create dummy data from templates', function() {
     expect(this.templates.ProductShirt).to.be.an('object')
     expect(this.templates.Program).to.be.an('object')
     expect(this.templates.User).to.be.an('object')
+    expect(this.templates.Workflow).to.be.an('object')
   })
 
   it('should have methods defined', function() {
@@ -63,6 +64,16 @@ describe('Create dummy data from templates', function() {
 
       })
     })
+  })
+
+  it('should be possible to override deep properties', function() {
+    const result = Template['_template_Workflow'].call(this, {
+      programId: '123456789',
+      'triggers.config.campaign.id': '987654321'
+    })
+
+    expect(result.programId).to.equal('123456789')
+    expect(result.triggers.config.campaign.id).to.equal('987654321')
   })
 
 })
