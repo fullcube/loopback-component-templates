@@ -42,7 +42,9 @@ describe('Create dummy data from templates', function() {
 
   it('should have methods defined', function() {
     this.templateNames = Object.keys(this.templates)
-    this.templateNames.forEach(templateName => {
+    this.templateNames
+      .filter(templateName => templateName !== 'Report')  // Do not run this test on the Report template
+      .forEach(templateName => {
       const methodName = `_template_${templateName}`
 
       describe(`Template ${templateName}`, function() {
@@ -74,6 +76,14 @@ describe('Create dummy data from templates', function() {
 
     expect(result.programId).to.equal('123456789')
     expect(result.triggers.config.campaign.id).to.equal('987654321')
+  })
+
+  it('should be possible to replace string values in templates', function() {
+    const programId = 'the-program-id'
+    const result = Template['_template_Report'].call(this, {}, {'PROGRAM_ID': programId})
+
+    expect(result).to.be.a('string')
+    expect(result).to.contain(programId)
   })
 
 })

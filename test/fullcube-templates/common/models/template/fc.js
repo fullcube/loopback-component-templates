@@ -1,4 +1,5 @@
 const faker = require('faker/locale/en')
+const fs = require('fs')
 
 fnApplication = () => ({
   name: faker.company.bsNoun(),
@@ -40,14 +41,14 @@ fnPersonComplex = () => {
   person.products = []
   person.cards = []
 
-  for(let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     const product = fnProduct()
 
     product.personId = person.id
     person.products.push(product)
   }
 
-  for(let i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     const card = fnCard()
 
     card.personId = person.id
@@ -129,6 +130,13 @@ fnWorkflowBasic = () => ({
   } ],
 })
 
+fnReport = params => {
+  const programId = params ? params[ 'PROGRAM_ID' ] : ''
+  const query = fs.readFileSync([ __dirname, 'reports', 'report.sql' ].join('/'))
+
+  return query.toString().replace('{PROGRAM_ID}', programId)
+}
+
 module.exports = {
   Application: fnApplication,
   Card: fnCard,
@@ -138,6 +146,7 @@ module.exports = {
   ProductBasic: fnProductBasic,
   ProductShirt: fnProductShirt,
   Program: fnProgram,
+  Report: fnReport,
   User: fnUser,
   WorkflowBasic: fnWorkflowBasic,
 }
