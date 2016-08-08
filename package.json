@@ -29,7 +29,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "dev": "DEBUG=loopback:component:templates nodemon test/test-server/server/server.js --ignore db.json --ext js,json",
+    "dev": "DEBUG='loopback:security:*,*:templates' nodemon test/test-server/server/server.js --ignore db.json --ext js,json",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "nyc  --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js",

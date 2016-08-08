@@ -14,6 +14,10 @@
       "../../../lib/mixins"
     ]
   },
+  "ACL": {
+    "dataSource": "db",
+    "public": true
+  },
   "Template": {
     "dataSource": "db",
     "public": true
