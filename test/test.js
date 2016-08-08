@@ -9,7 +9,7 @@ require('sinon-as-promised')(Promise)
 
 const expect = chai.expect
 
-const TEST_APP = path.join(__dirname, 'fullcube-templates')
+const TEST_APP = path.join(__dirname, 'test-server')
 const app = require(path.join(TEST_APP, 'server/server.js'))
 
 const Template = app.models.Template

@@ -1,5 +1,5 @@
 {
-  "name": "fullcube-templates",
+  "name": "test-server",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -27,5 +27,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "fullcube-templates"
+  "description": "test-server"
 }
