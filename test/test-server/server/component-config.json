@@ -1,7 +1,4 @@
 {
-  "loopback-component-explorer": {
-    "mountPath": "/explorer"
-  },
   "../../../lib": {
     "acls": [{
       "accessType": "*",
@@ -9,5 +6,8 @@
       "principalId": "$unauthenticated",
       "permission": "ALLOW"
     }]
+  },
+  "loopback-component-explorer": {
+    "mountPath": "/explorer"
   }
 }
