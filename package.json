@@ -1,7 +1,7 @@
 {
   "name": "loopback-component-templates",
   "description": "Define complex data templates for loopback models",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": {
     "name": "Bram Borggreve @beeman"
   },
