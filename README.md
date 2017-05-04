@@ -1,4 +1,6 @@
 # loopback-component-templates
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/fullcube/loopback-component-templates.svg)](https://greenkeeper.io/)
 Define complex data templates for loopback models
 
 [![Circle CI](https://circleci.com/gh/fullcube/loopback-component-templates.svg?style=svg)](https://circleci.com/gh/fullcube/loopback-component-templates) [![Dependencies](http://img.shields.io/david/fullcube/loopback-component-templates.svg?style=flat)](https://david-dm.org/fullcube/loopback-component-templates) [![Coverage Status](https://coveralls.io/repos/github/fullcube/loopback-component-templates/badge.svg?branch=master)](https://coveralls.io/github/fullcube/loopback-component-templates?branch=master)
