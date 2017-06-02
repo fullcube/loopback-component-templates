@@ -14,6 +14,15 @@
       "../../../lib/mixins"
     ]
   },
+
+  "accessToken": {
+    "dataSource": "db",
+    "public": true
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true
+  },
   "ACL": {
     "dataSource": "db",
     "public": true
