@@ -5,8 +5,6 @@ const Promise = require('bluebird')
 const path = require('path')
 const chai = require('chai')
 
-require('sinon-as-promised')(Promise)
-
 const expect = chai.expect
 
 const TEST_APP = path.join(__dirname, 'test-server')

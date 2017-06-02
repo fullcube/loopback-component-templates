@@ -37,33 +37,33 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "compression": "^1.0.3",
-    "cors": "^2.5.2",
-    "coveralls": "^2.11.9",
-    "eslint": "^2.13.1",
+    "cors": "^2.8.3",
+    "coveralls": "^2.13.1",
+    "eslint": "^3.19.0",
     "eslint-config-fullcube": "https://github.com/fullcube/eslint-config-fullcube/tarball/master",
     "eslint-config-strict": "https://github.com/fullcube/eslint-config-strict/tarball/f235fa38289b17e305a65be38ff9cfdf4c1eb31c",
     "eslint-plugin-filenames": "https://github.com/fullcube/eslint-plugin-filenames/tarball/0123c4bb0034d71cc7a04c25fd63b3ac798052a1",
-    "faker": "^3.1.0",
-    "helmet": "^2.1.1",
+    "faker": "^4.1.0",
+    "helmet": "^3.6.1",
     "loglevel": "^1.4.1",
-    "loopback": "^2.22.0",
-    "loopback-boot": "^2.6.5",
-    "loopback-component-explorer": "^2.5.0",
-    "loopback-component-fixtures": "^1.0.0",
-    "loopback-datasource-juggler": "^2.39.0",
-    "mocha": "^2.5.3",
+    "loopback": "^3.8.0",
+    "loopback-boot": "^2.24.0",
+    "loopback-component-explorer": "^4.2.0",
+    "loopback-component-fixtures": "^1.1.0",
+    "loopback-datasource-juggler": "^3.9.1",
+    "mocha": "^3.4.2",
     "nodemon": "^1.9.2",
-    "nyc": "^7.0.0",
-    "serve-favicon": "^2.0.1",
-    "sinon": "^1.17.4",
-    "sinon-as-promised": "^3.0.1",
-    "sinon-chai": "^2.8.0"
+    "nyc": "^11.0.1",
+    "serve-favicon": "^2.4.3",
+    "sinon": "^2.3.2",
+    "sinon-chai": "^2.10.0",
+    "strong-error-handler": "^2.1.0"
   },
   "dependencies": {
-    "bluebird": "^3.4.1",
-    "debug": "^2.2.0",
-    "lodash": "^4.13.1"
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "lodash": "^4.17.4"
   }
 }
