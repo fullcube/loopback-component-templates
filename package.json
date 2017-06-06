@@ -45,7 +45,7 @@
     "cors": "2.8.3",
     "coveralls": "2.13.1",
     "eslint": "3.19.0",
-    "eslint-config-fullcube": "2.0.2",
+    "eslint-config-fullcube": "2.0.40-latest-20170606-1901.0",
     "faker": "4.1.0",
     "helmet": "3.6.1",
     "loglevel": "1.4.1",
