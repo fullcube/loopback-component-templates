@@ -55,7 +55,7 @@
     "loopback-component-fixtures": "1.1.0",
     "mocha": "3.4.2",
     "nodemon": "1.9.2",
-    "nyc": "11.0.2",
+    "nyc": "11.1.0",
     "semantic-release": "6.3.6",
     "serve-favicon": "2.4.3",
     "strong-error-handler": "2.1.0"
