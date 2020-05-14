@@ -54,7 +54,7 @@
     "loopback-component-explorer": "4.2.0",
     "loopback-component-fixtures": "1.1.0",
     "mocha": "3.4.2",
-    "nodemon": "1.9.2",
+    "nodemon": "2.0.4",
     "nyc": "11.0.2",
     "semantic-release": "6.3.6",
     "serve-favicon": "2.4.3",
